@@ -103,9 +103,30 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "disqususername"
 
 syntax-highlight: True
+
+############
+# Projects #
+############
+
+#projects:
+#  - image: "/img/timeline/webDevelopment.png"
+#    title: "Raising Blockchain technology awareness"
+#    description: "Web development"
+#  - image: "/img/timeline/softwareArchitecture.png"
+#    title: "Bitcoin applications"
+#    description: "Software architecture, design, engineering, management"
+#  - image: "/img/timeline/softwareArchitecture.png"
+#    title: "Workflow technology"
+#    description: "Software architecture, design, engineering, management"
+#  - image: "/img/timeline/softwareArchitecture.png"
+#    title: "Distributed data access and management"
+#    description: "Software architecture, design, engineering, management"
+#  - image: "/img/timeline/softwareArchitecture.png"
+#    title: "Old projects"
+#    description: "Software architecture, design, engineering, management"
 
 ############
 # Timeline #
@@ -116,7 +137,7 @@ events:
     date: "Jan 2013 - Today"
     description: "Bitcoin and Blockchain consultant and educator"
   - image: "/img/timeline/softwareArchitecture.png"
-    date: "Jul 2012 - Mar 2016"
+    date: "Aug 2010 - Mar 2016"
     description: "Software architecture, design, engineering, management"
   - image: "/img/timeline/lecturer1.png"
     date: "Sep 2008 - Jun 2015"
@@ -200,6 +221,7 @@ keybase-in-footer: False
 
 pages_list:
   About: 'about'
+  Projects: 'projects'
 #  Blog: 'latest-post'
   Timeline: 'timeline'
   Talks: 'talks'
