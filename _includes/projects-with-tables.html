@@ -1,0 +1,39 @@
+
+<!-- Projects Start -->
+
+<section id="{{ page.section-type }}" class="container content-section ">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      {{ page.content | markdownify }}
+
+      <div class="table-responsive">
+      <table class="table">
+          <tbody>
+        {% for event in site.projects %}
+          {% capture class %}
+          {% endcapture %}
+
+            <tr>
+              <td style="border: 0; padding-bottom: 5em">
+                <img class="img-circle img-responsive" src="{{site.baseurl}}{{ event.image }}" alt="" height="175px" width="175px">
+              </td>
+              <td style="border: 0; padding-bottom: 5em">
+                <div class="projects-heading">
+                  <h4>{{ event.title }}</h4>
+                </div>
+                <div class="projects-body">
+                  {{ event.description | markdownify }}
+                </div>
+              </td>
+            </tr>
+                
+        {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects End -->
