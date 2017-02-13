@@ -4,7 +4,7 @@ https://keybase.io/kkarasavvas
 
 I hereby claim:
 
-  * I am an admin of http://kkarasavvas.com
+  * I am an admin of http://www.kkarasavvas.com
   * I am kkarasavvas (https://keybase.io/kkarasavvas) on keybase.
   * I have a public key with fingerprint C910 7AB3 A2DD 7A2D 3B2F  0B91 E568 9FC5 ABEC CF78
 
@@ -27,16 +27,16 @@ To do so, I am signing this object:
             ]
         },
         "service": {
-            "hostname": "kkarasavvas.com",
+            "hostname": "www.kkarasavvas.com",
             "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1486999340,
+    "ctime": 1486999471,
     "expire_in": 157680000,
-    "prev": "62825194a9ba73fceff040b0f3f2b922da12c5a832a7c70f69088332146f4d53",
-    "seqno": 8,
+    "prev": "9cebb625ff5cca5bcb8f26f8731d0112b1c4c8c54e83ee5af97de9c5756376eb",
+    "seqno": 9,
     "tag": "signature"
 }
 
@@ -45,30 +45,30 @@ which yields the signature:
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v1
 
-owGtkn1QFGUcxw8KGSgkzcEJTGVh5GWuY99uX24aNZuosSFLMwzGjmd3nweWg7vj
-7jgP4TIGR140BqLMcighoKJiZBgnK8wMqANCXsSg0YEZAgElUWEyQKNnmfqr/mz/
-2J3d/X6/v8/zfZ6KkAd0/n4TGR92fDbT6/HrnpZ0+2p66XxCsil5hCmfsMCVB8xS
-oNNltqgKYSJIiqSQUZBlxEKKF6GRBpTIKFAASOJoKEGe4yhGgAwtUrSi0CzHyjSL
-FApAAYkKImlWJgGhJ5BqTYcOu0O1unCsLFIkDyQGYA+Pb4xEI1ISKWjkBBHJRiBB
-PJIXsDHD5tQcGE4CTmhQbfgbfjGv4P2H/n/mzl2JkzgFsggIQEQcKXKIhiyHAAlp
-GWEzJWpCJ3RYQTbUWC3AAZzA7QZOwqsnHNBts0CtWqeajrmdhCmVUJSVBAHDKKJE
-Io5BJE8DYIQMSVEKK4skZAALkMjgegBHMpyA8FSeUjiBFrCD2I+z8VC3Kq+Ea0X9
-G8Ag27Ixnd1hc9lkWxb+meFy2U0a11euPLumPgAl8985Zkm1KninsMMNHU7VZiVM
-FJbKLlULpliBE0WRYUk9AT121QHNqqYw8pxA4kubA904kqMF2kiJLBAlwDNIhgiR
-LImhGURLIk0rgKLxrgkMDXiZx6sXSUFgGJrCpbCKkSG0leVYbYRJ0BMukI4jcXdW
-4Mp1QMIbXOq/4UGdn79uVYC/doR1wUGP/HOub/aELhdYCgfqY1I7qgc/mX96LvbE
-r+YQwy3drrDA4T3X7D+N9DS/sjjXua7hjfCR0BeL+sZDw8Wx6lcDCmcGNgfumE0u
-kJ9Y81vGz9fs8e8WDG7M/SZy9PDUwsmoL6/H9/g7RnOGvovrPdTv907Svtb2ktqS
-0brg6J4l9YPj0f698tKJXYWe6cnxw10GnphqczYlfGo7qQ9KPB4ksTOuxtUZa15O
-bA3tRjGlA76axMWkl5riF8/duN8tDq/fe6s9N9MbeC627/3aM3bp0cSajVeXoo48
-lDbUr5bz3b7JmYSJZntockjl4sd1jXnzqWnv5aSc31y6dWnMd5FquR9clHzPkxYR
-F9npqnq7/M/dhWB5+PkD43cqL3x0dLFh5CyhpFZ2FI81JYdtvXR609LCaXGA7EqZ
-sqzWXb5745KpML3atH1dnu93c37x2bKKq2sd9Y0N2zfUom1fV4bDVUciM6O8YUWd
-XER4Ujvb5o157dT3VRN7zlzhup4tyz1654c6X9CWWWuE1x3/lv666wszvy3FXRLh
-jL2dVD5+6nJI1Vz0U5/PWy/cJeLaPOl9s8Mloz6RCWDOP9eSNd21f2ep4fWLzDH3
-ZOqm1ifjOoz9voqQyCvPsLdvwtiEsszMocf7DDXZOw/dKxm0jAQVLz8225/f+Mfa
-Hw/uNj6cVy/Me2pbtnw73/zm3vUHd/zywsJf
-=mcoP
+owGtkmtMHFUcxZdXsUABhU0pbWMzRmriFub9WNASwAcPiwXUuoD0zsy9MGzZXWa2
+UFx5+GqDtlhtQEURDVbbQKSlNAVbyiOiDcSChFpLigmVajE0gKYKJIJ3SU384Efn
+w0xmcs75//5n7tENfiZfn5tFzYOtsyMHfIZnZNOeT0Y6PYTsVCsIq4eww7UH3KdC
+w11g11TCSpAUSSFOVBTEQkqQIEcDSmJUKAIk8zSUocDzFCNChpYoWlVplmcVmkUq
+BaCIJBWRNKuQgLAQSHMUQt2law43jlUkihSAzADsEfCNkWlEyhIFOV6UkMIBGeKR
+goiNRU7D68BwMjBgrObE3/BLwRref+j/Z+79a3Eyr0IWARFIiCclHtGQ5REgIa0g
+bKYkr9CAugOUQC+rHejAAGVlwCAqLYQOy5x26K3W0Aoxt0FYcwlVXUsQMYwqySTi
+GUQKNAAcZEiKUllFIiEDWIAkBtcDeJLhRYSnCpTKi7SIHUQ+zsZDyzRlLdxb1F2A
+8vLy2H9BxCrOEkzo0p1up+LchwVFbrfL2uOFc1e41hxQLribVSBrDhX/Lewog7qh
+OR2ElcJKxa15wylW5CVJYgXKQsADLk2HBZpXwQm8SOLLOweW4UhJgTLumkOIUxTA
+yYosIppHosBQKl6RlimFVUSFY6HIQMjhTQUVSgoncDwj8FAmvNuVOpyEVcKYoBBH
+4v4cwL1fh0RlUK3vFn+Tj69pXYCv9xibgtaH/3O26dWw1Ww4OKUTXyxLf+l7plZS
+kkNrq39fKC/dZd2r31q83P2CFv/4eOBIwfkNN38KqNk1kGe/J75pc1RzqdJceTI+
+d3diW26rEOlYP6fOjtpya94ZPRH6mn3Tjf6NK5kPP/NlYUjPQMlESuSJ93+Ou9pW
+T5cud70a5tMeVmXPDVhNvGGbDp+LrurynOVnvjtyuOUDT+ZZsBL87OKhLHO+pdVm
+nAdDnZnTiRdHTaE7dObr+KHlhG+2X/3eyL400LIUb66700igtmjbiydXm6/3Fl4q
+vpa18ZTgevNae95DEW+V/IbG4p5EjcS55IsrD26uvNe32f/dj9KSo4IjIwKLpytu
+1xyfbDrXGljf9nLCYNLwakfK2PzBo5fTWj5/rN+6KUPqSKbc3a+Dzu7JxsAL3870
+UzPTTzPE0phzx+noBW1CTBhvKjbMc49Cj6PjoN9T9bstiv/k1Jijz1K9zvXIVh/z
+/DYhM8YCjy0+n94YmVP1km3ils3XTTaYQ7oyot++EHzGvLUm9ePqO9a8pPC6GGLb
+fOOHn+4M6M2/PT5y5Qqf0/vL8ZwHkpY6P2OnUtP9MrZviRjVY48NHZmVstvTgs7w
+df3K8Bt2D5V6ynT/4RB+IWEqKfOrveOtc+Hl6JU47r2GqJ7Jpb4g4bSlx70z9Ynr
+v/alNzBCSEzKc+gHdfKPvB9rs1rv+3P4bw==
+=/PoJ
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
