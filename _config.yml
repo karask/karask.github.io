@@ -135,7 +135,7 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/bitcoinConsultant.png"
     date: "Jan 2013 - Today"
-    description: "Bitcoin and Blockchain consultant and educator"
+    description: "Bitcoin and Blockchain engineer, consultant and educator"
   - image: "/img/timeline/softwareArchitecture.png"
     date: "Aug 2010 - Today"
     description: "Software architecture, design, engineering, management"
