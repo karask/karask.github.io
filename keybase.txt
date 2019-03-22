@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kkarasavvas
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kkarasavvas.com
+  * I am kkarasavvas (https://keybase.io/kkarasavvas) on keybase.
+  * I have a public key ASCKVfzgL7Og0PsYbMUooQ_2psFCEwlRGJZiNvSib3tuMwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f58ccf4e179e52a193de8afb62ebe766138e32912dd2464c24fd1ae8f9df024c0a",
+      "host": "keybase.io",
+      "kid": "01208a55fce02fb3a0d0fb186cc528a10ff6a6c14213095118966236f4a26f7b6e330a",
+      "uid": "b6de4fa8a9f6096f2e46fa0e2cfdd219",
+      "username": "kkarasavvas"
+    },
+    "merkle_root": {
+      "ctime": 1553261664,
+      "hash": "6a27b5849f49817ef620df5ed85203286ca2aff401ad7fa059ab280f11c199b0c4dec9e2aca4fcea872fb00095acd667b210934a70c575e9cd6f217071e3adc5",
+      "hash_meta": "d35e6622b54202f8dc792a217460715a709ad3f25eeadfc8f583a3d3f1531015",
+      "seqno": 5001628
+    },
+    "service": {
+      "entropy": "imftmpDf0RjLfH+s8qcgFl1X",
+      "hostname": "kkarasavvas.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1553261733,
+  "expire_in": 504576000,
+  "prev": "704efb0b9399126306f10b87ab9c5046c6d6e192ba41321a7033ad458d780eea",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgilX84C+zoND7GGzFKKEP9qbBQhMJURiWYjb0om97bjMKp3BheWxvYWTESpcCF8QgcE77C5OZEmMG8QuHq5xQRsbW4ZK6QTIacDOtRY14DurEIFrE2mMp0r3cIrCeLBns9CxDxte36zo9ikyhkQxyvUCCAgHCo3NpZ8RAodQFZp2EpU5XbONsD+rsjk+WM3o8S1X7rGe0X9WrOOuLWrtd1jxd81WcGaj7tgMgIQSO+wz8eRw46IMuluKvBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEVqTu98Q+X0vwz+viRErsYeWl79wjwe5syYzmsCE4UBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kkarasavvas
+
+==================================================================
