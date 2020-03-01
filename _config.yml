@@ -56,7 +56,8 @@ start-delay: 200
 delete-delay: 3500
 lines: # You can add HTML Tags in the Text
   - text: "Software Architect and Engineer"
-  - text: "Bitcoin and Blockchain Consultant"
+  - text: "Bitcoin and Open Blockchains"
+  - text: "Open Source Contributor"
   - text: "Researcher and Educator"
 
 me-img: "/img/kkarasavvas3-small-square.png"
@@ -103,7 +104,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "disqususername"
+disqus-shortname: "kkarasavvas"
 
 syntax-highlight: True
 
@@ -135,7 +136,7 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/bitcoinConsultant.png"
     date: "Jan 2013 - Today"
-    description: "Bitcoin and Blockchain engineer, consultant and educator"
+    description: "Bitcoin engineer, open source contributor, researcher and educator"
   - image: "/img/timeline/softwareArchitecture.png"
     date: "Aug 2010 - Today"
     description: "Software architecture, design, engineering, management"
@@ -173,27 +174,28 @@ email: "kkarasavvas@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+#author_blurb: "Dr. Konstantinos Karasavvas is a computer scientist with 20+ years of experience. For the last 7 years, he is focused solely on Bitcoin and open blockchain technologies. He is teaching and leading several research and development teams in both academia and industry. He is also an open source contributor and an active member of local Bitcoin communities, organizing meetups and presenting in events."
+#author_blurb_image: "/img/author.png"
 
 ##################
 # Social Buttons #
 ##################
 
 social:
-  - title: "linkedin"
-    url: "https://gr.linkedin.com/in/kkarasavvas"
-    tooltip: "LinkedIn"
   - title: "twitter"
     url: "https://twitter.com/kkarasavvas"
     tooltip: "Twitter"
+  - title: "github"
+    url: "https://github.com/karask"
+    tooltip: "Github"
+  - title: "linkedin"
+    url: "https://gr.linkedin.com/in/kkarasavvas"
+    tooltip: "LinkedIn"
   - title: "users"
     url: "http://www.meetup.com/BlockchainGreece-1"
     tooltip: "Meetup"
 #  - title: "facebook"
 #    url: "https://facebook.com/"
-#  - title: "github"
-#    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
 #  - title: "bitcoin"
 #    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
 #  - title: "rss"
@@ -209,9 +211,9 @@ social:
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: False
-keybase-in-footer: False
+keybase-username: kkarasavvas
+keybase-in-social: True
+keybase-in-footer: True
 
 ################################################################################
 
@@ -222,14 +224,15 @@ keybase-in-footer: False
 pages_list:
   About: 'about'
   Projects: 'projects'
-#  Blog: 'latest-post'
+  Blog: 'latest-post'
   Timeline: 'timeline'
   Talks: 'talks'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
 
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "latest-post.html", "_posts", "blog" ]
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts" ]
+#exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "latest-post.html", "_posts", "blog" ]
 
 # Pagination path
 
@@ -243,3 +246,5 @@ sass:
 gems:
   - jekyll-paginate
   - jemoji
+
+plugins: [jekyll-paginate]

@@ -36,7 +36,7 @@
           <!-- Blog, Post, Tag and Error pages -->
           {% for p in site.pages_list %}
             <li>
-            {% if p[1] == "latest-post" %}
+	    {% if p[1] == "latest-post" %}
               {% if page.url == "/blog/index.html" | prepend: {{site.baseurl}} %}
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
               {% else %}
