@@ -33,7 +33,7 @@ False
 {% endraw %}
 </code></pre>
 <br/> 
-One byte can represent up to 2<sup>8</sup>=256 numbers (0-255). Several bytes are needed to represent larger numbers. For example, decimal number 1000 is `1111101000` in binary which requires 10 bits. Computers operate at the byte level and thus 2 bytes (or 16 bits) will be required to represent this number; binary: `0000001111101000` and hex: `03E8`. Note that the byte ordering is important and it is called [endianess](https://en.wikipedia.org/wiki/Endianness). The above example uses _big-endian_ ordering, where the most significant byte comes first and the least significant byte comes last. This is the same way we order numbers in languages (in [left-to-right scripts](https://en.wikipedia.org/wiki/Writing_system#Directionality)). In _little-endian_ the same number would be represented as `0010101111000000` and `E803`.
+One byte can represent up to 2<sup>8</sup>=256 numbers (0-255). Several bytes are needed to represent larger numbers. For example, decimal number 1000 is `1111101000` in binary which requires 10 bits. Computers operate at the byte level and thus 2 bytes (or 16 bits) will be required to represent this number; binary: `0000001111101000` and hex: `03E8`. Note that the byte ordering is important and it is called [endianness](https://en.wikipedia.org/wiki/Endianness). The above example uses _big-endian_ ordering, where the most significant byte comes first and the least significant byte comes last. This is the same way we order numbers in languages (in [left-to-right scripts](https://en.wikipedia.org/wiki/Writing_system#Directionality)). In _little-endian_ the same number would be represented as `0010101111000000` and `E803`.
 
 Python examples:
 <pre><code data-trim class="python">
@@ -45,7 +45,7 @@ Python examples:
 '0000001111101000'
 >>> binascii.unhexlify('03E8')       # convert hex string 03E8 to binary
 b'\x03\xe8'
->>> b'\x03\xe8'[::-1]                # reverse bytes to change endianess
+>>> b'\x03\xe8'[::-1]                # reverse bytes to change endianness
 b'\xe8\x03'
 {% endraw %}
 </code></pre>
