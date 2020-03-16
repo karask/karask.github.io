@@ -123,8 +123,10 @@ Cryptographic hash functions are very important in information security systems.
 
 * Encryption: Alice can encrypt a message with Bob’s public key and send it to Bob. Only the owner of the corresponding private key can decrypt and view the message.
 * Authentication / Digital Signatures: Alice can sign a message using her private key and send it to Bob. Anyone can view the contents and verify the signature using Alice’s public key, thus ensuring that it was indeed Alice that send the message.
+* Integrity: While anyone can view the contents of a signed message no one can modify it since the signature will be invalidated.
+* Non-Repudiation: Signing or encrypting a message cannot be refuted by the author once the message has been sent, assuming the private key is secure.
 
-> Bitcoin does not use encryption at all. Digital signatures are used to sign transactions in order to authenticate that you are the owner of the coins you wish to transfer.
+> Bitcoin does not use encryption at all. Digital signatures are used to sign transactions in order to authenticate that you are the owner of the coins you wish to transfer. Integrity and non-repudiation apply as well to transaction signing.
 
 There are several different algorithms for asymmetric cryptography, like [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) and [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). ECDSA, which Bitcoin uses, has the property that a private key can be used to calculate the corresponding public key.
 
