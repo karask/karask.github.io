@@ -9,9 +9,9 @@ tags: [ 'bitcoin', 'tutorial', 'development', 'python' ]
 This is the beginning of a tutorial that explores some of the technical aspects of Bitcoin and how these can be implemented in Python. The tutorial is aimed to people who already have some knowledge of how Bitcoin works at a high-level and want to delve deeper. In this first post we aim to provide some of the technical computer science background required for later posts. It aims to explain the fundamentals in a concise way but links will be provided inline for further study.
 
 ### Bytes, Hex, Endianness and Encodings
-Computers internally use the [binary numeral system](https://en.wikipedia.org/wiki/Binary_number) that consists of only two symbols: 0 and 1. A [binary digit](https://en.wikipedia.org/wiki/Binary_number), or _bit_, is the basic unit of binary. Eventually, everything is represented in bits.
+Computers internally use the [binary numeral system](https://en.wikipedia.org/wiki/Binary_number){:target="_blank"} that consists of only two symbols: 0 and 1. A [binary digit](https://en.wikipedia.org/wiki/Binary_number){:target="_blank"}, or _bit_, is the basic unit of binary. Eventually, everything is represented in bits.
 
-For ease of processing, bits are aggregated into [bytes](https://en.wikipedia.org/wiki/Byte). Each byte consists of 8 bits. Thus, `01000001` represents a single byte. It is difficult (and much longer) to use/type binary, thus we typically use the [hexadecimal numeral system](https://en.wikipedia.org/wiki/Hexadecimal) or _hex_ to represent bytes in a more human-friendly way. Hex has 16 possible symbols from 0 to F (0-9 and A-F). To represent 16 symbols we need exactly 4 bits (0 is 0000, 1 is 0001, ..., F is 1111) and thus each byte can be represented by two hex digits. For example, `01000001` is equivalent to `41` in hexadecimal (0100 is hex number 4 and 0001 is hex number 1). You can experiment with conversions between binary, hexadecimal and decimal using various [online tools](https://www.rapidtables.com/convert/number/binary-to-hex.html).
+For ease of processing, bits are aggregated into [bytes](https://en.wikipedia.org/wiki/Byte){:target="_blank"}. Each byte consists of 8 bits. Thus, `01000001` represents a single byte. It is difficult (and much longer) to use/type binary, thus we typically use the [hexadecimal numeral system](https://en.wikipedia.org/wiki/Hexadecimal){:target="_blank"} or _hex_ to represent bytes in a more human-friendly way. Hex has 16 possible symbols from 0 to F (0-9 and A-F). To represent 16 symbols we need exactly 4 bits (0 is 0000, 1 is 0001, ..., F is 1111) and thus each byte can be represented by two hex digits. For example, `01000001` is equivalent to `41` in hexadecimal (0100 is hex number 4 and 0001 is hex number 1). You can experiment with conversions between binary, hexadecimal and decimal using various [online tools](https://www.rapidtables.com/convert/number/binary-to-hex.html){:target="_blank"}.
 
 Python examples:
 <pre><code data-trim class="python">
@@ -33,7 +33,7 @@ False
 {% endraw %}
 </code></pre>
 <br/> 
-One byte can represent up to 2<sup>8</sup>=256 numbers (0-255). Several bytes are needed to represent larger numbers. For example, decimal number 1000 is `1111101000` in binary which requires 10 bits. Computers operate at the byte level and thus 2 bytes (or 16 bits) will be required to represent this number; binary: `0000001111101000` and hex: `03E8`. Note that the byte ordering is important and it is called [endianness](https://en.wikipedia.org/wiki/Endianness). The above example uses _big-endian_ ordering, where the most significant byte comes first and the least significant byte comes last. This is the same way we order numbers in languages (in [left-to-right scripts](https://en.wikipedia.org/wiki/Writing_system#Directionality)). In _little-endian_ the same number would be represented as `0010101111000000` and `E803`.
+One byte can represent up to 2<sup>8</sup>=256 numbers (0-255). Several bytes are needed to represent larger numbers. For example, decimal number 1000 is `1111101000` in binary which requires 10 bits. Computers operate at the byte level and thus 2 bytes (or 16 bits) will be required to represent this number; binary: `0000001111101000` and hex: `03E8`. Note that the byte ordering is important and it is called [endianness](https://en.wikipedia.org/wiki/Endianness){:target="_blank"}. The above example uses _big-endian_ ordering, where the most significant byte comes first and the least significant byte comes last. This is the same way we order numbers in languages (in [left-to-right scripts](https://en.wikipedia.org/wiki/Writing_system#Directionality){:target="_blank"}). In _little-endian_ the same number would be represented as `0010101111000000` and `E803`.
 
 Python examples:
 <pre><code data-trim class="python">
@@ -52,7 +52,7 @@ b'\xe8\x03'
 <br/>
 > Internally Bitcoin uses little-endian byte order as it improves speed (most computers use little-endian byte ordering internally). Most hash function libraries (see next section) create hashes using big-endian and Bitcoin transmits those in that ordering. However, when hashes are displayed Bitcoin uses little-endian order! The latter might be because it treats them as integers to compare them faster.
 
-As we already mentioned computers only know about binary. To display these numbers for human consumption we need to convert them into characters (i.e. text). In order to accomplish that we need character encodings that provide mappings between bit sequences and characters. Examples of such encodings are [ASCII](https://en.wikipedia.org/wiki/ASCII) and [UTF-8](https://en.wikipedia.org/wiki/UTF-8). UTF-8 is widely used nowadays and it provides an 8-bit mapping between (binary) numbers and characters. For example,  character `A` is mapped to `01000001`. You can experiment with such encodings with [online tools](https://www.rapidtables.com/convert/number/ascii-to-binary.html).
+As we already mentioned computers only know about binary. To display these numbers for human consumption we need to convert them into characters (i.e. text). In order to accomplish that we need character encodings that provide mappings between bit sequences and characters. Examples of such encodings are [ASCII](https://en.wikipedia.org/wiki/ASCII){:target="_blank"} and [UTF-8](https://en.wikipedia.org/wiki/UTF-8){:target="_blank"}. UTF-8 is widely used nowadays and it provides an 8-bit mapping between (binary) numbers and characters. For example,  character `A` is mapped to `01000001`. You can experiment with such encodings with [online tools](https://www.rapidtables.com/convert/number/ascii-to-binary.html){:target="_blank"}.
 
 Python examples:
 <pre><code data-trim class="python">
@@ -79,7 +79,7 @@ b'41'
 <br/>
 
 ### Cryptographic Hash Functions
-A cryptographic hash function is a [hash function](https://en.wikipedia.org/wiki/Hash_function) that is suitable for cryptography. It is an one-way function that takes an arbitrary block of data and returns a fixed-size bit array, that is called the hash value or digest or digital fingerprint or just hash. It has the following properties:
+A cryptographic hash function is a [hash function](https://en.wikipedia.org/wiki/Hash_function){:target="_blank"} that is suitable for cryptography. It is an one-way function that takes an arbitrary block of data and returns a fixed-size bit array, that is called the hash value or digest or digital fingerprint or just hash. It has the following properties:
 
 * it is deterministic, i.e. the same block of data always returns the same hash
 * it is quick to compute
@@ -114,12 +114,12 @@ b'k\x88\xc0\x87$z\xa2\xf0~\xe1\xc5\x95k\x8e\x1a\x9fL\x7f\x89*p\xe3$\xf1\xbb=\x16
 
 Cryptographic hash functions are very important in information security systems. They are used in digital signatures, message authentication codes and as ordinary (but more secure) hash functions to index data in hash tables, to uniquely identify files (bittorrent, IPFS), as checksums to detect accidental (or not) corruption of data, etc.
 
-> Bitcoin is using two hashing functions: [SHA-256](https://en.wikipedia.org/wiki/SHA-2) and [RIPEMD-160](https://en.wikipedia.org/wiki/RIPEMD) which create a hash value of 256 and 160 bits respectively (or 32 and 20 bytes or 64 and 40 hex characters). 
+> Bitcoin is using two hashing functions: [SHA-256](https://en.wikipedia.org/wiki/SHA-2){:target="_blank"} and [RIPEMD-160](https://en.wikipedia.org/wiki/RIPEMD){:target="_blank"} which create a hash value of 256 and 160 bits respectively (or 32 and 20 bytes or 64 and 40 hex characters). 
 
 <br/>
 
 ### Asymmetric Cryptography
-[Asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) or public key cryptography is a cryptographic system that uses pairs of keys with a specific mathematical relation. In each pair there is a private key that should remain private and a public key that can be freely shared. Between two participants this allows:
+[Asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography){:target="_blank"} or public key cryptography is a cryptographic system that uses pairs of keys with a specific mathematical relation. In each pair there is a private key that should remain private and a public key that can be freely shared. Between two participants this allows:
 
 * Encryption: Alice can encrypt a message with Bob’s public key and send it to Bob. Only the owner of the corresponding private key can decrypt and view the message.
 * Authentication / Digital Signatures: Alice can sign a message using her private key and send it to Bob. Anyone can view the contents and verify the signature using Alice’s public key, thus ensuring that it was indeed Alice that send the message.
@@ -128,6 +128,6 @@ Cryptographic hash functions are very important in information security systems.
 
 > Bitcoin does not use encryption at all. Digital signatures are used to sign transactions in order to authenticate that you are the owner of the coins you wish to transfer. Integrity and non-repudiation apply as well to transaction signing.
 
-There are several different algorithms for asymmetric cryptography, like [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) and [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm). ECDSA, which Bitcoin uses, has the property that a private key can be used to calculate the corresponding public key.
+There are several different algorithms for asymmetric cryptography, like [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)){:target="_blank"} and [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm){:target="_blank"}. ECDSA, which Bitcoin uses, has the property that a private key can be used to calculate the corresponding public key.
 
 <br/>
