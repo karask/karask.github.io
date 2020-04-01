@@ -6,7 +6,6 @@ category: Bitcoin
 tags: [ 'bitcoin', 'tutorial', 'python', 'keys' ]
 ---
 
-### Introduction
 This part of the tutorial will explore Bitcoin's private keys and how we can create them programmatically. The tutorial is aimed to people who already have some knowledge of how Bitcoin works at a high-level and want to delve deeper. 
 
 Bitcoin uses the [Elliptic Curve Digital Signature Algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm){:target="_blank"} (ECDSA) to create its private-public key pairs. The exact elliptic curve parameters used in Bitcoin are defined by [secp256k1](https://en.bitcoin.it/wiki/Secp256k1){:target="_blank"}.
