@@ -6,7 +6,7 @@ category: Bitcoin
 tags: [ 'bitcoin', 'tutorial', 'development', 'python' ]
 ---
 
-This is the beginning of a tutorial that explores some of the technical aspects of Bitcoin and how these can be implemented in Python. The tutorial is aimed to people who already have some knowledge of how Bitcoin works at a high-level and want to delve deeper. In this first post we aim to provide some of the technical computer science background required for later posts. It aims to explain the fundamentals in a concise way but links will be provided inline for further study.
+This is the beginning of a tutorial that explores some of the technical aspects of Bitcoin and how these can be implemented in Python. The tutorial is aimed for people who already have some knowledge of how Bitcoin works at a high-level and want to delve deeper. In this first post we aim to provide some of the technical computer science background required for later posts. It aims to explain the fundamentals in a concise way but links will be provided inline for further study.
 
 ### Bytes, Hex, Endianness and Encodings
 Computers internally use the [binary numeral system](https://en.wikipedia.org/wiki/Binary_number){:target="_blank"} that consists of only two symbols: 0 and 1. A [binary digit](https://en.wikipedia.org/wiki/Binary_number){:target="_blank"}, or _bit_, is the basic unit of binary. Eventually, everything is represented in bits.
