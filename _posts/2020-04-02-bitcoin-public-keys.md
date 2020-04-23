@@ -20,10 +20,6 @@ An encoded uncompressed public key is 65 bytes long since it has the two points 
 
 Since the curve is mirrored in the x axis the y coordinate can only take 2 values (positive/negative) for a specific x. Thus, an encoded compressed public key is only 33 bytes long and has only the x coordinate with a prefix of 0x02 (when y is positive/even) or 0x03 (when y is negative/odd). 
 
-As an example let us use the following hexadecimal number:
-
-`0dde70823a4bb0ca3bd75a2010e8d5dc091185e73d8b4257a981c695a3eba95b`. 
-
 Let's use [python-bitcoin-utils](https://github.com/karask/python-bitcoin-utils){:target="_blank"} library[^3] to construct a private key object from a WIF and use that to create a public key object to show its two forms.
 
 <pre><code data-trim class="python">
