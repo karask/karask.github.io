@@ -30,7 +30,7 @@ The following is pseudocode of the process that converts the public key to publi
 version = (1 byte version number)
 keyHash = RIPEMD-160( SHA-256( publicKey ) )
 data = version + keyHash
-dataHash = SHA-256( SHA-256( data))
+dataHash = SHA-256( SHA-256( data ) )
 checksum = (first 4 bytes of dataHash)
 address = Base58CheckEncode( data + checksum )
 {% endraw %}
