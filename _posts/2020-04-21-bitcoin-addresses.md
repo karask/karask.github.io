@@ -15,7 +15,7 @@ An address typically represents the owner of a private/public pair but it can al
 
 > Notice that we do not share the public key as one would expect in public key cryptography but rather the address, which derives from the public key. Some benefits are:
 > * shorter addresses
-> * quantum computer resistance[^2]
+> * arguably, quantum computer resistance[^2]
 
 <br/>
 
@@ -112,7 +112,7 @@ Effectively you could nest or wrap a segwit address into a P2SH address. As alre
 Footnotes:
 
 [^1]: Or for segwit addresses bc and tb for mainnet and testnet respectively.
-[^2]: Until one spends from an address the public key will never appear on the blockchain and thus to potential attackers and since the address is hashed from the public key not even quantum computers could (arguably) brute force to get the public key and then the private key.
+[^2]: Until one spends from an address the public key will never appear on the blockchain and thus to potential attackers and since the address is hashed from the public key not even quantum computers could (arguably) brute force to get the public key and then the private key. Note, however, that even if that is the case the majority of addresses would be hacked thus destroying trust in (and the value of) the network anyway!
 [^3]: More precisely two hashing functions are used: RIPEMD-160( SHA-256( publicKey ) )
 [^4]: Similar to what we used when creating the [WIF](/bitcoin/2020/03/16/bitcoin-private-keys.html) format of a private key.
 [^5]: Pay to Public Key Hash - this is a typical legacy address.
