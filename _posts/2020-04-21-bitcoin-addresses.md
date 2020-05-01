@@ -21,7 +21,7 @@ An address typically represents the owner of a private/public pair but it can al
 
 ### Legacy Addresses
 
-An address is really just the hash of the public key[^3], called public key hash. That is how it is represented on the blockchain. The way we format addresses to display them (starting with **1**, **m**/**n**, etc.) are just for our convenience. The format that we use is [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding){:target="_blank"} encoding[^4] of the public key hash; [Base58](https://en.wikipedia.org/wiki/Base58){:target="_blank"} with version prefix to specify the network and a 32-bit [checksum](https://en.wikipedia.org/wiki/Checksum){:target="_blank"}.
+An address is really just the hash of the public key[^3], called public key hash (or PKH). That is how it is represented on the blockchain. The way we format addresses to display them (starting with **1**, **m**/**n**, etc.) are just for our convenience. The format that we use is [Base58Check](https://en.bitcoin.it/wiki/Base58Check_encoding){:target="_blank"} encoding[^4] of the public key hash; [Base58](https://en.wikipedia.org/wiki/Base58){:target="_blank"} with version prefix to specify the network and a 32-bit [checksum](https://en.wikipedia.org/wiki/Checksum){:target="_blank"}.
 
 The following is pseudocode of the process that converts the public key to public key hash and then address:
 
