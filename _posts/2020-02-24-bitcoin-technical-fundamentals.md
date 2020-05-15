@@ -58,6 +58,8 @@ Python examples:
 <pre><code data-trim class="python">
 {% raw %}
 >>> import binasci
+>>> 'A' == b'A'                      # A character is not a byte
+False
 >>> b'41' == '41'.encode('utf-8')    # Unicode string literals are stored internally in binary for efficiency
 True
 >>> 'ε'.encode()                     # UTF-8 (the default) is a variable lenth encoding - 'ε' is stored as two bytes
@@ -67,6 +69,8 @@ b'41'
 >>> binascii.unhexlify('41')         # converts string hex value 41 to binary - the UTF-8 value for 'A' is 0x41
 b'A'
 >>> b'A' == b'\x41'                  # the bytes from 0x01 to 0x7f are confusingly specified with UTF-8 characters
+True
+>>> b'41' == b'\x34\x31'             # similarly for binary characters b'4' and b'1' or b'41'
 True
 >>> b'A'.decode('utf-8')             # convert binary to characters for displaying according to UTF-8 encoding
 'A'
