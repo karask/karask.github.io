@@ -66,7 +66,7 @@ b'\xce\xb5'
 b'41'
 >>> binascii.unhexlify('41')         # converts string hex value 41 to binary - the UTF-8 value for 'A' is 0x41
 b'A'
->>> b'A' == b'\x41'                  # the bytes from 0x01 to 0x7f are confusingly specified with UTF-8 characters (same as ASCII)
+>>> b'A' == b'\x41'                  # the bytes from 0x01 to 0x7f are confusingly specified with UTF-8 characters
 True
 >>> b'A'.decode('utf-8')             # convert binary to characters for displaying according to UTF-8 encoding
 'A'
