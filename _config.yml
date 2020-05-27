@@ -104,7 +104,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "kkarasavvas"
+#disqus-shortname: "kkarasavvas"
 
 syntax-highlight: True
 
