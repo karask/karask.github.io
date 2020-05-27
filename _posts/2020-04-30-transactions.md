@@ -7,7 +7,7 @@ tags: [ 'bitcoin', 'tutorial', 'python', 'transactions', 'p2pkh', 'scripting']
 ---
 
 
-This part of the tutorial will introduce basic Bitcoin transaction types and focus on __Pay to Public Key Hash (P2PKH)__ transaction types. The tutorial is aimed for people who already have some knowledge of how Bitcoin works at a high-level and want to understand how it works at a low-level.
+This part of the tutorial will introduce basic Bitcoin transactions and focus on __Pay to Public Key Hash (P2PKH)__ transaction output types. The tutorial is aimed for people who already have some knowledge of how Bitcoin works at a high-level and want to understand how it works at a low-level.
 
 ### Transactions
 A transaction sends bitcoins from one address to another and it consists of 1+ inputs and 1+ outputs. The inputs of a transaction consist of outputs of previous transactions. When an output is spend it can never be used again. All the bitcoins are transferred elsewhere (to a recipient, back to yourself as change, etc.). Outputs that are available to be spend are called _Unspent Transaction Outputs (UTXOs)_ and Bitcoin nodes keep track of the complete UTXO set. 
@@ -20,7 +20,7 @@ The spending conditions and the proof that authorizes transfer are not fixed. A 
 
 When we want to spend that UTXO we create a new transaction with an input that references the UTXO that we wish to spend together with an _unlocking script_ or more formally a __scriptSig__.
 
-The standard transaction types supported by the Bitcoin protocol are:
+The standard transaction output types supported by the Bitcoin protocol are:
 * P2PK (Pay to Public Key - not used anymore)
 * P2PKH (Pay to Public Key Hash)
 * P2SH (Pay to Script Hash)
@@ -30,7 +30,7 @@ The standard transaction types supported by the Bitcoin protocol are:
 * Multisignature (Legacy multisignature transactions; now P2SH/P2WSH is used instead)
 * Non-standard (Any other transaction)[^1]
 
-The most common transaction type offering a standard way of transferring bitcoins around is P2PKH[^2], which is effectively "pay to a Bitcoin address". It is also possible, and used in the past, to pay directly to a public key with P2PK but that is not used anymore[^3]. Another very important transaction type is P2SH[^4] which allows locking scripts of arbitrary complexity to be used.
+The most common transaction output type offering a standard way of transferring bitcoins around is P2PKH[^2], which is effectively "pay to a Bitcoin address". It is also possible, and used in the past, to pay directly to a public key with P2PK but that is not used anymore[^3]. Another very important transaction output type is P2SH[^4] which allows locking scripts of arbitrary complexity to be used.
 
 To define a locking and unlocking script we make use of a scripting language, simply called [_Script_](https://en.bitcoin.it/wiki/Script){:target="_blank"}. This relatively simple language consists of several operations each of them identified by an opcode in hexadecimal. It is a simple [stack-based language](https://en.wikipedia.org/wiki/Stack-oriented_programming_language){:target="_blank"} that uses [reverse polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation){:target="_blank"} (e.g. `2 3 +`) that does not contain potentially dangerous programming constructs, like loops; it is a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language){:target="_blank"}.
 
@@ -107,7 +107,7 @@ This post explained how funds residing in UTXOs are locked/unlocked and how scri
 
 Footnotes:
 
-[^1]: Valid Non-standard transactions (containing scripts other than those defined by the standard transaction type scripts) are rejected and not relayed by nodes. However, they can be mined if it is arranged with a miner.
+[^1]: Valid Non-standard transactions (containing scripts other than those defined by the standard transaction output type scripts) are rejected and not relayed by nodes. However, they can be mined if it is arranged with a miner.
 [^2]: And P2WPKH, which was introduced with the segwit upgrade and will be discussed in anohter post.
 [^3]: PKHs are shorter and thus more convenient.
 [^4]: And P2WSH, which was introduced with the segwit upgrade and will be discussed in anohter post.
