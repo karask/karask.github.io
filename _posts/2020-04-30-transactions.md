@@ -101,6 +101,10 @@ Since the script finished and the only element in the stack is now **true**[^8] 
 
 All the operators, or opcodes, and their explanations can be found [here](https://en.bitcoin.it/wiki/Script){:target="_blank"}. 
 
+To help clarify how addresses, locking scripts and UTXOs relate we provide the following diagram. Addresses 1Zed, 1Alice and 1Bob are short for the actual bitcoin addresses of Zed, Alice and Bob respectively. The diagram emphasises what happens when funds are sent to an address.
+
+![Addresses, Locking scripts and UTXOs](/assets/images/address_p2pkh_utxos.png)
+
 This post explained how funds residing in UTXOs are locked/unlocked and how scripts are evaluated for validation. In the next post we will go through several examples of how we can create simple transactions programmatically.
 
 <br/><br/>
