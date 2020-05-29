@@ -9,11 +9,7 @@ tags: [ 'bitcoin', 'transactions', 'tutorial', 'development', 'python' ]
 In the previous post we went through transactions, their inputs and outputs and how the funds are locked. In this post we will go through different ways of creating a simple payment transaction from the command line and then programmatically. The tutorial assumes some understanding of the high-level Bitcoin concepts or at least having gone through the previous technical articles of this tutorial.
 
 
-### Creating Transactions
-Let us create a simple transaction that sends some funds to another address. We will first go through different ways of accomplishing this via the command line interface (CLI) of a Bitcoin node and later programmatically using a Python library.
-
-
-#### Automatically create a transaction
+### Automatically create a transaction
 
 We can use `sendtoaddress` to send bitcoins to an address.
 
@@ -30,7 +26,7 @@ In this example we use the node to send `0.1` bitcoins to address `mnB6gSoVfUAPu
 Notice that the result is the transaction identifier (txid) of this transaction.
 
 
-#### Create a transaction using a node
+### Create a transaction using a node
 
 In this example we want to select the inputs explicitly. We need to know the txids and the output indexes (vout). As an example, we can get those with:
 
@@ -144,7 +140,7 @@ error code: -26, error message:, 256: absurdly-high-fee
 
 In this instance we get an error saying that the transaction has an exceptionally high fee. We have not specified any output for change so 1.1 bitcoins would be given to miners (1.3-0.2). Most wallets have similar protection mechanisms to help safeguard from user errors.
 
-#### Using HTTP JSON-RPC
+### Using HTTP JSON-RPC
 
 [JSON-RPC](http://json-rpc.org/wiki/specification){:target="_blank"} is a simple protocol that specifies how to communicate with remote procedure calls using JSON as the format. It can be used with several transport protocols but most typically it is used over HTTP.
 
@@ -176,7 +172,7 @@ Enter host password for user ‘kostas’:
 
 Thus, we can also send the commands seen before to construct transactions via JSON-RPC.
 
-#### Calling node commands programmatically
+### Calling node commands programmatically
 
 A Python library that wraps Bitcoin’s API calls is `python-bitcoinrpc`. Install with `pip` and try it out.
 
@@ -198,7 +194,7 @@ print(block_count)
 
 All API calls can be used, including the ones to create a transaction with either sendtoaddress or createrawtransaction + signrawtransaction + sendrawtransaction.
 
-#### Creating transactions programmatically
+### Creating transactions programmatically
 
 The Bitcoin node allows the creation of the basic transactions. It does not support arbitrary scripts. We can create those programmatically by explicitly specifying the locking/unlocking conditions. We will use the `python-bitcoin-utils` library that can be installed easily with `$ pip install bitcoin-utils` in your working python environment.
 
