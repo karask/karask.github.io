@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Multibase, Multihash, and Hashlinks
-category: Computer Science
+category: Computer-Science
 tags: [ 'multibase', 'multihash', 'hashlink', 'programming', 'specification', 'python' ]
 ---
 
