@@ -91,6 +91,7 @@ Finally, to support existing applications that are using the HTTP URL scheme one
 
 `<url>?hl=<resource-hash>`
 
+For more detais consult the [specification](https://tools.ietf.org/html/draft-sporny-hashlink-06).
 
 
 <br/>
