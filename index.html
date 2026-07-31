@@ -8,29 +8,41 @@ redirect_from:
   - /latest-post.html
 ---
 <section class="hero">
+  <p class="cmd"><span class="sh">$</span> <span class="bin">whoami</span></p>
   <h1>
     <span id="scramble-name" aria-hidden="true">Kostas A. Karasavvas</span>
     <span class="sr-only">Kostas A. Karasavvas</span>
   </h1>
   <p class="tagline">generalist computer scientist · crypto + AI</p>
+
+  <p class="cmd"><span class="sh">$</span> <span class="bin">cat</span> about.txt</p>
   <p class="intro">
     Computer scientist and problem solver, 25+ years across the whole development
     cycle. Building on Bitcoin and open blockchains since 2013; these days working
     across crypto and AI. Off-hours: designing tabletop worlds and small games.
   </p>
+
+  <p class="cmd"><span class="sh">$</span> <span class="bin">ls</span> ~/projects --featured <span class="cursor" aria-hidden="true"></span></p>
 </section>
 
 <section id="work">
-  <p class="section-label">Selected Work</p>
-  <ul class="ledger">
-    <li>
-      <div class="meta">
-        <span>2018–</span>
-        <span>python</span>
-        <span>library</span>
+  <div class="panes">
+
+    <article class="pane wide">
+      <div class="pane-title">
+        <span class="dots" aria-hidden="true">&#9679;&#9679;&#9679;</span>
+        <span class="name">python-bitcoin-utils</span>
+        <span class="meta">2018&ndash; · python · library</span>
       </div>
-      <div class="entry">
-        <h3><a href="https://github.com/karask/python-bitcoin-utils">python-bitcoin-utils</a></h3>
+      <pre class="term-code"><code><span class="k">from</span> bitcoinutils.setup <span class="k">import</span> <span class="f">setup</span>
+<span class="k">from</span> bitcoinutils.keys <span class="k">import</span> <span class="f">PrivateKey</span>
+
+<span class="f">setup</span>(<span class="s">'testnet'</span>)
+
+priv = <span class="f">PrivateKey</span>()                                <span class="c"># generate a fresh key</span>
+addr = priv.get_public_key().get_segwit_address()  <span class="c"># P2WPKH</span>
+<span class="f">print</span>(addr.to_string())                            <span class="c"># tb1q...</span></code></pre>
+      <div class="pane-body">
         <p>
           A low-level Bitcoin library that explains the thorny details as it goes —
           keys, all address types, transactions with every SIGHASH, timelocks and
@@ -41,18 +53,20 @@ redirect_from:
           <a href="https://github.com/karask/python-bitcoin-utils">github &#8599;</a>
         </p>
       </div>
-    </li>
-    <li>
-      <div class="meta">
-        <span>2020–</span>
-        <span>book</span>
-        <span>cc by-sa</span>
+    </article>
+
+    <article class="pane">
+      <div class="pane-title">
+        <span class="dots" aria-hidden="true">&#9679;&#9679;&#9679;</span>
+        <span class="name">bitcoin-textbook</span>
+        <span class="meta">2020&ndash; · book</span>
       </div>
-      <div class="entry">
-        <h3><a href="/bitcoin-textbook">Bitcoin Programming Textbook</a></h3>
+      <img src="/img/projects/bitcoin-textbook.jpg" alt="Cover of the Bitcoin Programming textbook" loading="lazy">
+      <div class="pane-body">
         <p>
-          An open-source textbook on Bitcoin programming — a practical guide full
-          of command-line and Python examples, built on python-bitcoin-utils.
+          An open-source (CC BY-SA) textbook on Bitcoin programming — a practical
+          guide full of command-line and Python examples, built on
+          python-bitcoin-utils.
         </p>
         <p class="links">
           <a href="/bitcoin-textbook">read &#8599;</a>
@@ -60,34 +74,38 @@ redirect_from:
           <a href="https://github.com/karask/bitcoin-textbook">github &#8599;</a>
         </p>
       </div>
-    </li>
-    <li>
-      <div class="meta">
-        <span>platform</span>
-        <span>credentials</span>
+    </article>
+
+    <article class="pane">
+      <div class="pane-title">
+        <span class="dots" aria-hidden="true">&#9679;&#9679;&#9679;</span>
+        <span class="name">blockchain-credentials</span>
+        <span class="meta">platform</span>
       </div>
-      <div class="entry">
-        <h3><a href="https://verifiable-pdfs.org/">Blockchain Credentials</a></h3>
+      <img src="/img/projects/verifiable-pdfs.jpg" alt="verifiable-pdfs.org — Verifiable PDFs project site" loading="lazy">
+      <div class="pane-body">
         <p>
           Architected and built the University of Nicosia's blockchain certificate
           platform: easy, fast and independent verification of diplomas and
-          certificates anchored on Bitcoin. Open-sourced as verifiable-pdfs, with a
-          live validator running at UNIC.
+          certificates anchored on Bitcoin. Open-sourced as verifiable-pdfs, with
+          a live validator running at UNIC.
         </p>
         <p class="links">
-          <a href="https://verifiable-pdfs.org/">verifiable-pdfs.org &#8599;</a>
+          <a href="https://verifiable-pdfs.org/">site &#8599;</a>
           <a href="https://github.com/verifiable-pdfs">github &#8599;</a>
           <a href="http://verify.unic.ac.cy/verify">validator &#8599;</a>
         </p>
       </div>
-    </li>
-    <li>
-      <div class="meta">
-        <span>ttrpg</span>
-        <span>d100</span>
+    </article>
+
+    <article class="pane">
+      <div class="pane-title">
+        <span class="dots" aria-hidden="true">&#9679;&#9679;&#9679;</span>
+        <span class="name">fantasy-crux</span>
+        <span class="meta">ttrpg · d100</span>
       </div>
-      <div class="entry">
-        <h3><a href="/fantasy-crux-digital">Fantasy Crux</a></h3>
+      <img src="/img/projects/fantasy-crux.jpg" alt="Fantasy Crux Digital — companion tools for the tabletop RPG" loading="lazy">
+      <div class="pane-body">
         <p>
           My own d100 tabletop role-playing game system — worldbuilding, rules and
           a digital companion. <span class="note">v2 coming to fantasycrux.org.</span>
@@ -96,25 +114,28 @@ redirect_from:
           <a href="/fantasy-crux-digital">play v1 &#8599;</a>
         </p>
       </div>
-    </li>
-    <li>
-      <div class="meta">
-        <span>games</span>
-        <span>web</span>
+    </article>
+
+    <article class="pane">
+      <div class="pane-title">
+        <span class="dots" aria-hidden="true">&#9679;&#9679;&#9679;</span>
+        <span class="name">fun-games</span>
+        <span class="meta">web games</span>
       </div>
-      <div class="entry">
-        <h3><a href="/fun-games">Fun Games</a></h3>
+      <img src="/img/projects/fun-games.jpg" alt="Tiny Games Hub — collection of small web games" loading="lazy">
+      <div class="pane-body">
         <p>Small games built for the joy of it.</p>
         <p class="links">
           <a href="/fun-games">play &#8599;</a>
         </p>
       </div>
-    </li>
-  </ul>
+    </article>
+
+  </div>
 </section>
 
 <section class="about" id="about">
-  <p class="section-label">About</p>
+  <p class="cmd"><span class="sh">$</span> <span class="bin">cat</span> background.txt</p>
   <p>
     I hold an MSc in distributed multimedia information systems and a PhD in
     multi-agent systems and bioinformatics, and spent 10+ years in research on
@@ -128,7 +149,7 @@ redirect_from:
     to open source, and spent years organizing Bitcoin meetups and community
     events around Greece.
   </p>
-  <p class="pointer">
-    <span class="arrow">everything else &#8594;</span> <a href="/archive/">/archive/</a>
+  <p class="pointer cmd">
+    <span class="sh">$</span> <span class="bin">cd</span> <a href="/archive/">/archive/</a> <span class="arrow"># everything else lives here</span>
   </p>
 </section>
