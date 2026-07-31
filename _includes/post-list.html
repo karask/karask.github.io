@@ -1,19 +1,9 @@
-
-<!-- Post List Start -->
-
-<h4 align="left">
-  <strong>{{ post.date | date_to_string }}</strong>
-  <small>.
-    <a class="category" href="{{site.baseurl}}/categories/{{ post.category | downcase }}.html">
-      {{ post.category }}
-    </a>
-  .</small>
-  <br class="visible-xs-block">
-  <a href="{{site.baseurl}}{{post.url}}">
-    <strong>{{ post.title }}</strong>
-  </a>
-  <br class="visible-xs-block">
-  <!--small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small-->
-</h4>
-
-<!-- Post List End -->
+<li>
+  <div class="meta">
+    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span><a class="cat" href="/categories/{{ post.category | downcase }}.html">{{ post.category | downcase }}</a></span>
+  </div>
+  <div class="entry">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  </div>
+</li>
