@@ -1,20 +1,13 @@
-<!-- Footer Start -->
-
-<footer>
-
-    {% include social-buttons.html %}
-
-    <p><br><br></p>
-
-    <div class="container text-center">
-        <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
-        {% if site.keybase-in-footer %}
-        <p style="font-size: 16px;"><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i
-                class="fa fa-key"></i> {{site.keybase-username}} on Keybase</a></p>
-        {% endif %}
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <div class="social">
+      <a href="#" data-u="kkarasavvas" data-d="gmail.com" data-show="address">email</a>
+      <a href="{{ site.github }}">github</a>
+      <a href="{{ site.linkedin }}">linkedin</a>
+      <a href="{{ site.twitter }}">twitter</a>
+      <a href="{{ site.keybase }}">keybase</a>
     </div>
+    <p class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+  </div>
 </footer>
-
-<p><br><br><br><br><br><br></p>
-
-<!-- Footer End -->
