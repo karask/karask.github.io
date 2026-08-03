@@ -235,6 +235,33 @@ section {
 
 /* Panes (project windows) ------------------------------------------------ */
 
+.ls-out {
+  margin: 0;
+}
+
+.ls-out a {
+  color: var(--aqua);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ls-out a:hover {
+  text-decoration: underline;
+}
+
+.ls-out a + a {
+  margin-left: 1.25rem;
+}
+
+.group-cmd {
+  margin-top: 2.75rem;
+  scroll-margin-top: 1.5rem;
+}
+
+#work .group-cmd:first-child {
+  margin-top: 0;
+}
+
 .panes {
   display: grid;
   grid-template-columns: 1fr 1fr;
