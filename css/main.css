@@ -276,6 +276,7 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .pane.wide {
@@ -300,6 +301,23 @@ section {
 .pane-title .name {
   font-weight: 600;
   color: var(--ink);
+}
+
+.pane-title .name::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.pane-title .name:focus-visible {
+  outline: none;
+}
+
+.pane-title .name:focus-visible::after {
+  outline: 2px solid var(--orange);
+  outline-offset: -2px;
+  border-radius: 5px;
 }
 
 .pane-title .meta {
@@ -333,6 +351,8 @@ section {
 .pane-body .links {
   margin-top: auto;
   font-size: 0.8125rem;
+  position: relative;
+  z-index: 2;
 }
 
 .pane-body .links a {
