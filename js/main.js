@@ -57,12 +57,12 @@
     }
   }
 
-  /* The lab is unlisted; Shift + L opens it from the homepage. */
+  /* The lab is unlisted; Ctrl + Shift + L opens it from the homepage. */
   function initLabShortcut() {
     if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
     document.addEventListener("keydown", function (event) {
       if (event.defaultPrevented || event.repeat || event.isComposing) return;
-      if (!event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;
+      if (!event.ctrlKey || !event.shiftKey || event.altKey || event.metaKey) return;
       if (event.key.toLowerCase() !== "l") return;
       var target = event.target;
       if (target.isContentEditable || target.closest("input, textarea, select, [role='textbox']")) return;
