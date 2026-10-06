@@ -1,4 +1,4 @@
-/* The Ledger — theme toggle, hex-scramble name, email assembly */
+/* The Ledger — theme toggle, hex-scramble name, email assembly, lab shortcut */
 
 (function () {
   "use strict";
@@ -57,9 +57,24 @@
     }
   }
 
+  /* The lab is unlisted; Shift + L opens it from the homepage. */
+  function initLabShortcut() {
+    if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
+    document.addEventListener("keydown", function (event) {
+      if (event.defaultPrevented || event.repeat || event.isComposing) return;
+      if (!event.shiftKey || event.ctrlKey || event.altKey || event.metaKey) return;
+      if (event.key.toLowerCase() !== "l") return;
+      var target = event.target;
+      if (target.isContentEditable || target.closest("input, textarea, select, [role='textbox']")) return;
+      event.preventDefault();
+      window.location.href = "/lab/";
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initThemeToggle();
     scrambleName();
     initEmail();
+    initLabShortcut();
   });
 })();
