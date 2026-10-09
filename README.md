@@ -10,7 +10,7 @@ to localStorage.
 Unlisted projects live at `/lab/`, accessible with **Ctrl + Shift + L** from the
 homepage or directly by URL. The shortcut ignores editable fields and Alt/Meta
 modifiers. The lab is kept out of navigation and the sitemap. The Daily Signal
-currently also appears first under "other" on the homepage.
+is listed only in the lab.
 
 Serve locally with `scripts/serve` (install deps once with `scripts/install`).
 Deployed by GitHub Pages from `master`; custom domain `kkarasavvas.com` (CNAME).
